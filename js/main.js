@@ -42,8 +42,9 @@
   }
   function updateCounts() {
     const n = getCart().reduce((s, i) => s + i.qty, 0), w = getWish().length;
-    $$('[data-cart-count]').forEach(e => { e.textContent = n || ''; e.dataset.n = n; });
-    $$('[data-wish-count]').forEach(e => { e.textContent = w || ''; e.dataset.n = w; });
+    const bump = (e, v) => { const prev = Number(e.dataset.n || 0); e.textContent = v || ''; e.dataset.n = v; if (v > prev) { e.classList.remove('bump'); void e.offsetWidth; e.classList.add('bump'); } };
+    $$('[data-cart-count]').forEach(e => bump(e, n));
+    $$('[data-wish-count]').forEach(e => bump(e, w));
     $$('[data-wish]').forEach(b => b.setAttribute('aria-pressed', String(getWish().includes(b.dataset.wish))));
   }
 

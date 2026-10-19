@@ -1,0 +1,88 @@
+/* Motion layer: scroll reveals, page fades, scroll effects, micro-interactions.
+   Hidden states only exist when js/motion.js added .js-motion to <html>, so the site is fully visible without JS. */
+
+/* ---------- page fade in / out ---------- */
+@keyframes pageIn { from { opacity: 0; } to { opacity: 1; } }
+body { animation: pageIn .45s ease both; }
+body.leaving { opacity: 0; transition: opacity .2s ease; }
+
+/* ---------- scroll reveal ---------- */
+.js-motion [data-anim] {
+  opacity: 0;
+  transition: opacity .75s cubic-bezier(.2, .7, .2, 1), transform .75s cubic-bezier(.2, .7, .2, 1);
+  transition-delay: var(--d, 0ms);
+  will-change: opacity, transform;
+}
+.js-motion [data-anim="up"]   { transform: translateY(30px); }
+.js-motion [data-anim="left"] { transform: translateX(-36px); }
+.js-motion [data-anim="right"] { transform: translateX(36px); }
+.js-motion [data-anim="zoom"] { transform: scale(.94); }
+.js-motion [data-anim].in { opacity: 1; transform: none; will-change: auto; }
+
+/* ---------- images fade in when loaded ---------- */
+.js-motion img.fade { opacity: 0; transition: opacity .6s ease; }
+.js-motion img.fade.ready { opacity: 1; }
+
+/* ---------- scroll progress bar + back to top ---------- */
+.scroll-progress {
+  position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 300;
+  background: linear-gradient(90deg, var(--accent), #f5a46f); transform: scaleX(0); transform-origin: 0 50%;
+  pointer-events: none;
+}
+.to-top {
+  position: fixed; right: 18px; bottom: 22px; z-index: 90; width: 46px; height: 46px; border-radius: 50%;
+  border: 0; background: var(--plum); color: #fff; font-size: 20px; line-height: 1; cursor: pointer;
+  box-shadow: 0 8px 22px rgba(40, 20, 30, .3); opacity: 0; transform: translateY(14px); pointer-events: none;
+  transition: opacity .3s ease, transform .3s ease, background .2s ease;
+}
+.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+.to-top:hover { background: var(--accent); }
+
+/* ---------- header reacts to scrolling ---------- */
+.header { transition: box-shadow .3s ease; }
+.header .hdr { transition: padding .25s ease; }
+.header.scrolled { box-shadow: 0 6px 20px rgba(40, 20, 30, .12); }
+.header.scrolled .hdr { padding-top: 7px; padding-bottom: 7px; }
+
+/* ---------- hero: slow gradient drift + floating product ---------- */
+@keyframes heroShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+@keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+.hero-b { background-size: 180% 180%; animation: heroShift 16s ease-in-out infinite; }
+.hero-art { will-change: transform; }
+.hero-art img { animation: floaty 6s ease-in-out infinite; }
+.hero-t h1, .hero-t small, .hero-t .btn { animation: pageIn .9s ease both; }
+.hero-t small { animation-delay: .15s; }
+.hero-t h1 { animation-delay: .3s; }
+.hero-t .btn { animation-delay: .5s; }
+
+/* ---------- micro-interactions ---------- */
+.btn { transition: background .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(40, 20, 30, .18); }
+.btn:active { transform: translateY(0); box-shadow: none; }
+.nav a { transition: color .2s ease, border-color .2s ease; }
+.mc, .na, .tc, .dz, .bt, .bgreat { transition: transform .35s ease, box-shadow .35s ease; }
+.mc:hover, .na:hover, .tc:hover, .dz:hover, .bt:hover, .bgreat:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.bgreat img, .bt img, .na img, .mc img, .tc img { transition: transform .6s ease; }
+.bgreat:hover img, .bt:hover img, .na:hover img, .mc:hover img, .tc:hover img { transform: scale(1.05); }
+.wish { transition: transform .2s ease; }
+.wish:hover { transform: scale(1.12); }
+@keyframes pop { 0% { transform: scale(1); } 40% { transform: scale(1.45); } 100% { transform: scale(1); } }
+.wish[aria-pressed="true"] svg { animation: pop .38s ease; }
+@keyframes bump { 0% { transform: scale(1); } 40% { transform: scale(1.6); } 100% { transform: scale(1); } }
+.count.bump { animation: bump .4s ease; }
+.arrow { transition: transform .25s ease; }
+a:hover > .arrow, .mc:hover .arrow, .tc:hover .arrow { transform: translate(3px, -3px); }
+.sw button { transition: transform .15s ease, box-shadow .15s ease; }
+.sw button:hover { transform: scale(1.12); }
+.thumbs button { transition: transform .2s ease, border-color .2s ease; }
+.thumbs button:hover { transform: translateY(-2px); }
+#toast { transition: opacity .3s ease, transform .3s cubic-bezier(.2, .8, .2, 1); }
+
+/* ---------- respect reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+  .hero-b, .hero-art img, .hero-t h1, .hero-t small, .hero-t .btn { animation: none; }
+  .js-motion [data-anim], .js-motion img.fade { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .scroll-progress, .to-top { display: none; }
+  .btn:hover, .mc:hover, .na:hover, .tc:hover, .dz:hover, .bt:hover, .bgreat:hover { transform: none; }
+}

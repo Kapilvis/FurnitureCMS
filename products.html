@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Products | Nivaas</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="list">
+<div id="site-header"></div>
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span id="crumbCur" style="margin:0;color:var(--ink)"></span></nav>
+  <div class="lp-h"><h1 id="lpTitle">All Furniture</h1><p id="lpIntro"></p></div>
+  <div class="lp">
+    <aside class="filters" id="filters" aria-label="Filters">
+      <div class="drawer-x"><b>Filters</b><button type="button" id="fClose" aria-label="Close filters">&times;</button></div>
+      <div class="fgrp"><h3>Category</h3><div id="catChecks"></div></div>
+      <div class="fgrp"><h3>Price</h3>
+        <label><input type="radio" name="price" value="any" checked> Any price</label>
+        <label><input type="radio" name="price" value="u10"> Under ₹10,000</label>
+        <label><input type="radio" name="price" value="b1025"> ₹10,000 – ₹25,000</label>
+        <label><input type="radio" name="price" value="b2540"> ₹25,000 – ₹40,000</label>
+        <label><input type="radio" name="price" value="o40"> Above ₹40,000</label></div>
+      <div class="fgrp"><h3>Offers</h3><label><input type="checkbox" id="fDisc"> 25% off or more</label></div>
+      <div style="display:flex;gap:8px;margin-top:16px"><button class="btn sm" type="button" id="clearF">Clear all</button><button class="btn sm pri" type="button" id="applyF">Show results</button></div>
+    </aside>
+    <div class="scrim" id="fScrim"></div>
+    <section aria-label="Products">
+      <div class="tools">
+        <span id="resCount" aria-live="polite"></span>
+        <div style="display:flex;gap:10px;align-items:center">
+          <button class="btn sm fbtn" type="button" id="fOpen">Filters</button>
+          <label class="sr" for="sort">Sort by</label>
+          <select id="sort"><option value="rel">Sort: Featured</option><option value="lh">Price: Low to High</option><option value="hl">Price: High to Low</option><option value="disc">Biggest discount</option><option value="rate">Top rated</option></select>
+        </div>
+      </div>
+      <div class="grid" id="plist"></div>
+      <p class="empty" id="noRes" hidden></p>
+      <div class="more"><button class="btn" type="button" id="moreBtn">Load more</button></div>
+    </section>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

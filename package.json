@@ -1,0 +1,19 @@
+{
+  "name": "nivaas-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Furniture storefront with an admin CMS: runs on Netlify (Functions + Blobs) or any Node host",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node tools/build-netlify.js",
+    "test:netlify-sim": "node tools/netlify-sim.mjs",
+    "build:pages": "node tools/build-pages.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.4"
+  }
+}

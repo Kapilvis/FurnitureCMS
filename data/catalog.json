@@ -1,0 +1,2259 @@
+{
+  "version": 1,
+  "currency": "INR",
+  "colors": {
+    "walnut": {
+      "name": "Walnut",
+      "hex": "#8A5A3B"
+    },
+    "oak": {
+      "name": "Natural Oak",
+      "hex": "#C49A6C"
+    },
+    "teak": {
+      "name": "Teak",
+      "hex": "#A8683A"
+    },
+    "white": {
+      "name": "Ivory White",
+      "hex": "#E9E3D7"
+    },
+    "black": {
+      "name": "Charcoal",
+      "hex": "#3A3D40"
+    },
+    "olive": {
+      "name": "Olive Green",
+      "hex": "#6F7A4A"
+    },
+    "terracotta": {
+      "name": "Terracotta",
+      "hex": "#C4684A"
+    },
+    "navy": {
+      "name": "Navy Blue",
+      "hex": "#2F4466"
+    },
+    "grey": {
+      "name": "Stone Grey",
+      "hex": "#8E9296"
+    },
+    "sand": {
+      "name": "Sand Beige",
+      "hex": "#CDB690"
+    },
+    "rust": {
+      "name": "Rust Orange",
+      "hex": "#B5532E"
+    },
+    "teal": {
+      "name": "Deep Teal",
+      "hex": "#2F6B6B"
+    },
+    "wine": {
+      "name": "Wine Red",
+      "hex": "#7A2A3E"
+    },
+    "gold": {
+      "name": "Brass Gold",
+      "hex": "#B8923A"
+    }
+  },
+  "types": [
+    {
+      "id": "bed",
+      "name": "Bed"
+    },
+    {
+      "id": "chair",
+      "name": "Chair"
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee table"
+    },
+    {
+      "id": "decor",
+      "name": "Decor piece"
+    },
+    {
+      "id": "desk",
+      "name": "Study table"
+    },
+    {
+      "id": "dining",
+      "name": "Dining set"
+    },
+    {
+      "id": "lamp",
+      "name": "Lamp"
+    },
+    {
+      "id": "mirror",
+      "name": "Mirror"
+    },
+    {
+      "id": "recliner",
+      "name": "Recliner"
+    },
+    {
+      "id": "shelf",
+      "name": "Shelf / rack"
+    },
+    {
+      "id": "sofa",
+      "name": "Sofa"
+    },
+    {
+      "id": "storage",
+      "name": "Wardrobe / cabinet"
+    },
+    {
+      "id": "tv",
+      "name": "TV unit"
+    }
+  ],
+  "categories": [
+    {
+      "id": "sofas",
+      "name": "Sofas",
+      "defaultTypeId": "sofa",
+      "image": "assets/images/categories/sofas.svg"
+    },
+    {
+      "id": "beds",
+      "name": "Beds",
+      "defaultTypeId": "bed",
+      "image": "assets/images/categories/beds.svg"
+    },
+    {
+      "id": "dining",
+      "name": "Dining Sets",
+      "defaultTypeId": "dining",
+      "image": "assets/images/categories/dining.svg"
+    },
+    {
+      "id": "wardrobes",
+      "name": "Wardrobes",
+      "defaultTypeId": "storage",
+      "image": "assets/images/categories/wardrobes.svg"
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee Tables",
+      "defaultTypeId": "coffee",
+      "image": "assets/images/categories/coffee.svg"
+    },
+    {
+      "id": "study",
+      "name": "Study Tables",
+      "defaultTypeId": "desk",
+      "image": "assets/images/categories/study.svg"
+    },
+    {
+      "id": "tv",
+      "name": "TV Units",
+      "defaultTypeId": "tv",
+      "image": "assets/images/categories/tv.svg"
+    },
+    {
+      "id": "recliners",
+      "name": "Recliners",
+      "defaultTypeId": "recliner",
+      "image": "assets/images/categories/recliners.svg"
+    },
+    {
+      "id": "chairs",
+      "name": "Lounge Chairs",
+      "defaultTypeId": "chair",
+      "image": "assets/images/categories/chairs.svg"
+    },
+    {
+      "id": "storage",
+      "name": "Shelves & Racks",
+      "defaultTypeId": "shelf",
+      "image": "assets/images/categories/storage.svg"
+    },
+    {
+      "id": "lighting",
+      "name": "Lighting",
+      "defaultTypeId": "lamp",
+      "image": "assets/images/categories/lighting.svg"
+    },
+    {
+      "id": "mirrors",
+      "name": "Mirrors & Decor",
+      "defaultTypeId": "mirror",
+      "image": "assets/images/categories/mirrors.svg"
+    }
+  ],
+  "products": [
+    {
+      "id": "sf01",
+      "name": "Aarav 3-Seater Fabric Sofa",
+      "categoryId": "sofas",
+      "typeId": "sofa",
+      "price": 32999,
+      "mrp": 45999,
+      "badge": "Bestseller",
+      "rating": 4.3,
+      "reviews": 391,
+      "colors": [
+        "grey",
+        "olive",
+        "terracotta",
+        "navy"
+      ],
+      "material": "Fabric, Sheesham wood frame",
+      "description": "A deep, supportive three-seater with high-density foam cushions and a solid wood frame. Removable covers make everyday cleaning easy.",
+      "specs": {
+        "Dimensions": "208 L x 88 D x 82 H cm",
+        "Material": "Fabric, Sheesham wood frame",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "grey": [
+          "assets/images/products/sf01/grey-1.svg",
+          "assets/images/products/sf01/grey-2.svg",
+          "assets/images/products/sf01/grey-3.svg",
+          "assets/images/products/sf01/grey-4.svg"
+        ],
+        "olive": [
+          "assets/images/products/sf01/olive-1.svg",
+          "assets/images/products/sf01/olive-2.svg",
+          "assets/images/products/sf01/olive-3.svg",
+          "assets/images/products/sf01/olive-4.svg"
+        ],
+        "terracotta": [
+          "assets/images/products/sf01/terracotta-1.svg",
+          "assets/images/products/sf01/terracotta-2.svg",
+          "assets/images/products/sf01/terracotta-3.svg",
+          "assets/images/products/sf01/terracotta-4.svg"
+        ],
+        "navy": [
+          "assets/images/products/sf01/navy-1.svg",
+          "assets/images/products/sf01/navy-2.svg",
+          "assets/images/products/sf01/navy-3.svg",
+          "assets/images/products/sf01/navy-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "sf02",
+      "name": "Meera L-Shaped Sectional",
+      "categoryId": "sofas",
+      "typeId": "sofa",
+      "price": 54999,
+      "mrp": 74999,
+      "badge": "New",
+      "rating": 4.4,
+      "reviews": 392,
+      "colors": [
+        "sand",
+        "grey",
+        "navy"
+      ],
+      "material": "Fabric, Engineered wood",
+      "description": "A generous sectional for family movie nights, with a reversible chaise that fits either corner.",
+      "specs": {
+        "Dimensions": "270 L x 160 D x 85 H cm",
+        "Material": "Fabric, Engineered wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "sand": [
+          "assets/images/products/sf02/sand-1.svg",
+          "assets/images/products/sf02/sand-2.svg",
+          "assets/images/products/sf02/sand-3.svg",
+          "assets/images/products/sf02/sand-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/sf02/grey-1.svg",
+          "assets/images/products/sf02/grey-2.svg",
+          "assets/images/products/sf02/grey-3.svg",
+          "assets/images/products/sf02/grey-4.svg"
+        ],
+        "navy": [
+          "assets/images/products/sf02/navy-1.svg",
+          "assets/images/products/sf02/navy-2.svg",
+          "assets/images/products/sf02/navy-3.svg",
+          "assets/images/products/sf02/navy-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "sf04",
+      "name": "Ira 2-Seater Loveseat",
+      "categoryId": "sofas",
+      "typeId": "sofa",
+      "price": 18999,
+      "mrp": 24999,
+      "badge": "Sale",
+      "rating": 4.6,
+      "reviews": 394,
+      "colors": [
+        "terracotta",
+        "teal",
+        "grey"
+      ],
+      "material": "Fabric, Mango wood legs",
+      "description": "Compact and comfortable, ideal for apartments, reading corners and bedrooms.",
+      "specs": {
+        "Dimensions": "150 L x 80 D x 80 H cm",
+        "Material": "Fabric, Mango wood legs",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "terracotta": [
+          "assets/images/products/sf04/terracotta-1.svg",
+          "assets/images/products/sf04/terracotta-2.svg",
+          "assets/images/products/sf04/terracotta-3.svg",
+          "assets/images/products/sf04/terracotta-4.svg"
+        ],
+        "teal": [
+          "assets/images/products/sf04/teal-1.svg",
+          "assets/images/products/sf04/teal-2.svg",
+          "assets/images/products/sf04/teal-3.svg",
+          "assets/images/products/sf04/teal-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/sf04/grey-1.svg",
+          "assets/images/products/sf04/grey-2.svg",
+          "assets/images/products/sf04/grey-3.svg",
+          "assets/images/products/sf04/grey-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "sf05",
+      "name": "Zorawar Sofa Cum Bed",
+      "categoryId": "sofas",
+      "typeId": "sofa",
+      "price": 22999,
+      "mrp": 33999,
+      "badge": "",
+      "rating": 4.7,
+      "reviews": 395,
+      "colors": [
+        "olive",
+        "grey",
+        "wine"
+      ],
+      "material": "Fabric, Metal frame",
+      "description": "Seats three by day and folds flat into a sleeping surface for guests.",
+      "specs": {
+        "Dimensions": "190 L x 85 D x 80 H cm",
+        "Material": "Fabric, Metal frame",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "olive": [
+          "assets/images/products/sf05/olive-1.svg",
+          "assets/images/products/sf05/olive-2.svg",
+          "assets/images/products/sf05/olive-3.svg",
+          "assets/images/products/sf05/olive-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/sf05/grey-1.svg",
+          "assets/images/products/sf05/grey-2.svg",
+          "assets/images/products/sf05/grey-3.svg",
+          "assets/images/products/sf05/grey-4.svg"
+        ],
+        "wine": [
+          "assets/images/products/sf05/wine-1.svg",
+          "assets/images/products/sf05/wine-2.svg",
+          "assets/images/products/sf05/wine-3.svg",
+          "assets/images/products/sf05/wine-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "sf06",
+      "name": "Naina Velvet 3-Seater",
+      "categoryId": "sofas",
+      "typeId": "sofa",
+      "price": 41999,
+      "mrp": 59999,
+      "badge": "New",
+      "rating": 4,
+      "reviews": 396,
+      "colors": [
+        "wine",
+        "teal",
+        "navy"
+      ],
+      "material": "Velvet, Sheesham wood",
+      "description": "Rich velvet upholstery with tufted arms and tapered wooden legs.",
+      "specs": {
+        "Dimensions": "215 L x 90 D x 84 H cm",
+        "Material": "Velvet, Sheesham wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "wine": [
+          "assets/images/products/sf06/wine-1.svg",
+          "assets/images/products/sf06/wine-2.svg",
+          "assets/images/products/sf06/wine-3.svg",
+          "assets/images/products/sf06/wine-4.svg"
+        ],
+        "teal": [
+          "assets/images/products/sf06/teal-1.svg",
+          "assets/images/products/sf06/teal-2.svg",
+          "assets/images/products/sf06/teal-3.svg",
+          "assets/images/products/sf06/teal-4.svg"
+        ],
+        "navy": [
+          "assets/images/products/sf06/navy-1.svg",
+          "assets/images/products/sf06/navy-2.svg",
+          "assets/images/products/sf06/navy-3.svg",
+          "assets/images/products/sf06/navy-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "rc01",
+      "name": "Kabir Leatherette Recliner",
+      "categoryId": "recliners",
+      "typeId": "recliner",
+      "price": 21499,
+      "mrp": 28999,
+      "badge": "",
+      "rating": 4.1,
+      "reviews": 377,
+      "colors": [
+        "black",
+        "walnut"
+      ],
+      "material": "Leatherette, Steel",
+      "description": "A single-seater recliner with a smooth manual mechanism and a padded headrest.",
+      "specs": {
+        "Dimensions": "90 L x 92 D x 102 H cm",
+        "Material": "Leatherette, Steel",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "black": [
+          "assets/images/products/rc01/black-1.svg",
+          "assets/images/products/rc01/black-2.svg",
+          "assets/images/products/rc01/black-3.svg",
+          "assets/images/products/rc01/black-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/rc01/walnut-1.svg",
+          "assets/images/products/rc01/walnut-2.svg",
+          "assets/images/products/rc01/walnut-3.svg",
+          "assets/images/products/rc01/walnut-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "rc02",
+      "name": "Lekha 3-Seater Recliner Sofa",
+      "categoryId": "recliners",
+      "typeId": "recliner",
+      "price": 69999,
+      "mrp": 99999,
+      "badge": "Bestseller",
+      "rating": 4.2,
+      "reviews": 378,
+      "colors": [
+        "sand",
+        "grey",
+        "rust"
+      ],
+      "material": "Leatherette, Steel mechanism",
+      "description": "Three motorised recliner seats with USB charging and cup holders.",
+      "specs": {
+        "Dimensions": "215 L x 95 D x 100 H cm",
+        "Material": "Leatherette, Steel mechanism",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "sand": [
+          "assets/images/products/rc02/sand-1.svg",
+          "assets/images/products/rc02/sand-2.svg",
+          "assets/images/products/rc02/sand-3.svg",
+          "assets/images/products/rc02/sand-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/rc02/grey-1.svg",
+          "assets/images/products/rc02/grey-2.svg",
+          "assets/images/products/rc02/grey-3.svg",
+          "assets/images/products/rc02/grey-4.svg"
+        ],
+        "rust": [
+          "assets/images/products/rc02/rust-1.svg",
+          "assets/images/products/rc02/rust-2.svg",
+          "assets/images/products/rc02/rust-3.svg",
+          "assets/images/products/rc02/rust-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "rc03",
+      "name": "Omkar Fabric Recliner",
+      "categoryId": "recliners",
+      "typeId": "recliner",
+      "price": 17999,
+      "mrp": 26999,
+      "badge": "Sale",
+      "rating": 4.3,
+      "reviews": 379,
+      "colors": [
+        "navy",
+        "grey",
+        "olive"
+      ],
+      "material": "Fabric, Steel",
+      "description": "Soft fabric recliner with a pull-lever and a rocking base.",
+      "specs": {
+        "Dimensions": "88 L x 90 D x 100 H cm",
+        "Material": "Fabric, Steel",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "navy": [
+          "assets/images/products/rc03/navy-1.svg",
+          "assets/images/products/rc03/navy-2.svg",
+          "assets/images/products/rc03/navy-3.svg",
+          "assets/images/products/rc03/navy-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/rc03/grey-1.svg",
+          "assets/images/products/rc03/grey-2.svg",
+          "assets/images/products/rc03/grey-3.svg",
+          "assets/images/products/rc03/grey-4.svg"
+        ],
+        "olive": [
+          "assets/images/products/rc03/olive-1.svg",
+          "assets/images/products/rc03/olive-2.svg",
+          "assets/images/products/rc03/olive-3.svg",
+          "assets/images/products/rc03/olive-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "rc04",
+      "name": "Tanvi Rocker Recliner",
+      "categoryId": "recliners",
+      "typeId": "recliner",
+      "price": 15499,
+      "mrp": 21999,
+      "badge": "",
+      "rating": 4.4,
+      "reviews": 380,
+      "colors": [
+        "terracotta",
+        "grey"
+      ],
+      "material": "Fabric, Plywood",
+      "description": "Gentle rocking motion with a full-length footrest.",
+      "specs": {
+        "Dimensions": "85 L x 88 D x 98 H cm",
+        "Material": "Fabric, Plywood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "terracotta": [
+          "assets/images/products/rc04/terracotta-1.svg",
+          "assets/images/products/rc04/terracotta-2.svg",
+          "assets/images/products/rc04/terracotta-3.svg",
+          "assets/images/products/rc04/terracotta-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/rc04/grey-1.svg",
+          "assets/images/products/rc04/grey-2.svg",
+          "assets/images/products/rc04/grey-3.svg",
+          "assets/images/products/rc04/grey-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "bd01",
+      "name": "Nila King Bed with Storage",
+      "categoryId": "beds",
+      "typeId": "bed",
+      "price": 38999,
+      "mrp": 52999,
+      "badge": "Bestseller",
+      "rating": 4.2,
+      "reviews": 322,
+      "colors": [
+        "walnut",
+        "oak",
+        "white"
+      ],
+      "material": "Sheesham wood",
+      "description": "A solid wood king bed with a hydraulic lift-up base that hides a full-length storage box.",
+      "specs": {
+        "Dimensions": "205 L x 183 W x 100 H cm",
+        "Material": "Sheesham wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/bd01/walnut-1.svg",
+          "assets/images/products/bd01/walnut-2.svg",
+          "assets/images/products/bd01/walnut-3.svg",
+          "assets/images/products/bd01/walnut-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/bd01/oak-1.svg",
+          "assets/images/products/bd01/oak-2.svg",
+          "assets/images/products/bd01/oak-3.svg",
+          "assets/images/products/bd01/oak-4.svg"
+        ],
+        "white": [
+          "assets/images/products/bd01/white-1.svg",
+          "assets/images/products/bd01/white-2.svg",
+          "assets/images/products/bd01/white-3.svg",
+          "assets/images/products/bd01/white-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "bd02",
+      "name": "Rohan Queen Bed",
+      "categoryId": "beds",
+      "typeId": "bed",
+      "price": 24999,
+      "mrp": 33999,
+      "badge": "",
+      "rating": 4.3,
+      "reviews": 323,
+      "colors": [
+        "oak",
+        "walnut",
+        "black"
+      ],
+      "material": "Mango wood",
+      "description": "A clean-lined queen bed with a tall headboard and a sturdy slatted base.",
+      "specs": {
+        "Dimensions": "212 L x 160 W x 105 H cm",
+        "Material": "Mango wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/bd02/oak-1.svg",
+          "assets/images/products/bd02/oak-2.svg",
+          "assets/images/products/bd02/oak-3.svg",
+          "assets/images/products/bd02/oak-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/bd02/walnut-1.svg",
+          "assets/images/products/bd02/walnut-2.svg",
+          "assets/images/products/bd02/walnut-3.svg",
+          "assets/images/products/bd02/walnut-4.svg"
+        ],
+        "black": [
+          "assets/images/products/bd02/black-1.svg",
+          "assets/images/products/bd02/black-2.svg",
+          "assets/images/products/bd02/black-3.svg",
+          "assets/images/products/bd02/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "bd03",
+      "name": "Tara Upholstered Bed",
+      "categoryId": "beds",
+      "typeId": "bed",
+      "price": 29999,
+      "mrp": 41999,
+      "badge": "New",
+      "rating": 4.4,
+      "reviews": 324,
+      "colors": [
+        "grey",
+        "sand",
+        "teal"
+      ],
+      "material": "Fabric, Plywood",
+      "description": "A softly padded headboard in textured fabric on a solid plywood base.",
+      "specs": {
+        "Dimensions": "210 L x 170 W x 115 H cm",
+        "Material": "Fabric, Plywood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "grey": [
+          "assets/images/products/bd03/grey-1.svg",
+          "assets/images/products/bd03/grey-2.svg",
+          "assets/images/products/bd03/grey-3.svg",
+          "assets/images/products/bd03/grey-4.svg"
+        ],
+        "sand": [
+          "assets/images/products/bd03/sand-1.svg",
+          "assets/images/products/bd03/sand-2.svg",
+          "assets/images/products/bd03/sand-3.svg",
+          "assets/images/products/bd03/sand-4.svg"
+        ],
+        "teal": [
+          "assets/images/products/bd03/teal-1.svg",
+          "assets/images/products/bd03/teal-2.svg",
+          "assets/images/products/bd03/teal-3.svg",
+          "assets/images/products/bd03/teal-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "bd04",
+      "name": "Dev Single Bed",
+      "categoryId": "beds",
+      "typeId": "bed",
+      "price": 12499,
+      "mrp": 16999,
+      "badge": "",
+      "rating": 4.5,
+      "reviews": 325,
+      "colors": [
+        "white",
+        "oak"
+      ],
+      "material": "Engineered wood",
+      "description": "A simple single bed for kids and guest rooms with a durable laminate finish.",
+      "specs": {
+        "Dimensions": "200 L x 100 W x 85 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "white": [
+          "assets/images/products/bd04/white-1.svg",
+          "assets/images/products/bd04/white-2.svg",
+          "assets/images/products/bd04/white-3.svg",
+          "assets/images/products/bd04/white-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/bd04/oak-1.svg",
+          "assets/images/products/bd04/oak-2.svg",
+          "assets/images/products/bd04/oak-3.svg",
+          "assets/images/products/bd04/oak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "bd05",
+      "name": "Veda Hydraulic Queen Bed",
+      "categoryId": "beds",
+      "typeId": "bed",
+      "price": 33999,
+      "mrp": 47999,
+      "badge": "Sale",
+      "rating": 4.6,
+      "reviews": 326,
+      "colors": [
+        "walnut",
+        "teak",
+        "olive"
+      ],
+      "material": "Sheesham wood",
+      "description": "Lift the mattress with one hand to reach the roomy hydraulic storage underneath.",
+      "specs": {
+        "Dimensions": "208 L x 163 W x 102 H cm",
+        "Material": "Sheesham wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/bd05/walnut-1.svg",
+          "assets/images/products/bd05/walnut-2.svg",
+          "assets/images/products/bd05/walnut-3.svg",
+          "assets/images/products/bd05/walnut-4.svg"
+        ],
+        "teak": [
+          "assets/images/products/bd05/teak-1.svg",
+          "assets/images/products/bd05/teak-2.svg",
+          "assets/images/products/bd05/teak-3.svg",
+          "assets/images/products/bd05/teak-4.svg"
+        ],
+        "olive": [
+          "assets/images/products/bd05/olive-1.svg",
+          "assets/images/products/bd05/olive-2.svg",
+          "assets/images/products/bd05/olive-3.svg",
+          "assets/images/products/bd05/olive-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "dn01",
+      "name": "Sahil 6-Seater Dining Set",
+      "categoryId": "dining",
+      "typeId": "dining",
+      "price": 36999,
+      "mrp": 49999,
+      "badge": "Bestseller",
+      "rating": 4.2,
+      "reviews": 54,
+      "colors": [
+        "walnut",
+        "oak",
+        "black"
+      ],
+      "material": "Sheesham wood",
+      "description": "A solid wood dining table with six cushioned chairs, built for family meals.",
+      "specs": {
+        "Dimensions": "Table 180 L x 90 W x 76 H cm",
+        "Material": "Sheesham wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/dn01/walnut-1.svg",
+          "assets/images/products/dn01/walnut-2.svg",
+          "assets/images/products/dn01/walnut-3.svg",
+          "assets/images/products/dn01/walnut-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/dn01/oak-1.svg",
+          "assets/images/products/dn01/oak-2.svg",
+          "assets/images/products/dn01/oak-3.svg",
+          "assets/images/products/dn01/oak-4.svg"
+        ],
+        "black": [
+          "assets/images/products/dn01/black-1.svg",
+          "assets/images/products/dn01/black-2.svg",
+          "assets/images/products/dn01/black-3.svg",
+          "assets/images/products/dn01/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "dn02",
+      "name": "Kiara 4-Seater Dining Set",
+      "categoryId": "dining",
+      "typeId": "dining",
+      "price": 19999,
+      "mrp": 27999,
+      "badge": "Sale",
+      "rating": 4.3,
+      "reviews": 55,
+      "colors": [
+        "white",
+        "walnut",
+        "teal"
+      ],
+      "material": "Engineered wood, Metal legs",
+      "description": "A compact four-seater for smaller dining areas, with a scratch-resistant top.",
+      "specs": {
+        "Dimensions": "Table 120 L x 75 W x 75 H cm",
+        "Material": "Engineered wood, Metal legs",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "white": [
+          "assets/images/products/dn02/white-1.svg",
+          "assets/images/products/dn02/white-2.svg",
+          "assets/images/products/dn02/white-3.svg",
+          "assets/images/products/dn02/white-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/dn02/walnut-1.svg",
+          "assets/images/products/dn02/walnut-2.svg",
+          "assets/images/products/dn02/walnut-3.svg",
+          "assets/images/products/dn02/walnut-4.svg"
+        ],
+        "teal": [
+          "assets/images/products/dn02/teal-1.svg",
+          "assets/images/products/dn02/teal-2.svg",
+          "assets/images/products/dn02/teal-3.svg",
+          "assets/images/products/dn02/teal-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "dn03",
+      "name": "Ritu Round Dining Table",
+      "categoryId": "dining",
+      "typeId": "dining",
+      "price": 15499,
+      "mrp": 20999,
+      "badge": "",
+      "rating": 4.4,
+      "reviews": 56,
+      "colors": [
+        "oak",
+        "walnut",
+        "white"
+      ],
+      "material": "Mango wood",
+      "description": "A round table that seats four and makes any room feel more open.",
+      "specs": {
+        "Dimensions": "Diameter 105, Height 76 cm",
+        "Material": "Mango wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/dn03/oak-1.svg",
+          "assets/images/products/dn03/oak-2.svg",
+          "assets/images/products/dn03/oak-3.svg",
+          "assets/images/products/dn03/oak-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/dn03/walnut-1.svg",
+          "assets/images/products/dn03/walnut-2.svg",
+          "assets/images/products/dn03/walnut-3.svg",
+          "assets/images/products/dn03/walnut-4.svg"
+        ],
+        "white": [
+          "assets/images/products/dn03/white-1.svg",
+          "assets/images/products/dn03/white-2.svg",
+          "assets/images/products/dn03/white-3.svg",
+          "assets/images/products/dn03/white-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "dn05",
+      "name": "Mohan 6-Seater Marble-Top Set",
+      "categoryId": "dining",
+      "typeId": "dining",
+      "price": 44999,
+      "mrp": 62999,
+      "badge": "New",
+      "rating": 4.6,
+      "reviews": 58,
+      "colors": [
+        "black",
+        "walnut"
+      ],
+      "material": "Marble, Sheesham wood",
+      "description": "A marble-finish top on a solid wood base with six upholstered chairs.",
+      "specs": {
+        "Dimensions": "Table 170 L x 90 W x 76 H cm",
+        "Material": "Marble, Sheesham wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "black": [
+          "assets/images/products/dn05/black-1.svg",
+          "assets/images/products/dn05/black-2.svg",
+          "assets/images/products/dn05/black-3.svg",
+          "assets/images/products/dn05/black-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/dn05/walnut-1.svg",
+          "assets/images/products/dn05/walnut-2.svg",
+          "assets/images/products/dn05/walnut-3.svg",
+          "assets/images/products/dn05/walnut-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "wd01",
+      "name": "Leela 3-Door Wardrobe",
+      "categoryId": "wardrobes",
+      "typeId": "storage",
+      "price": 27999,
+      "mrp": 38999,
+      "badge": "Bestseller",
+      "rating": 4.5,
+      "reviews": 333,
+      "colors": [
+        "walnut",
+        "white",
+        "grey"
+      ],
+      "material": "Engineered wood",
+      "description": "A roomy wardrobe with a hanging rail, shelves and a lockable drawer.",
+      "specs": {
+        "Dimensions": "135 W x 52 D x 195 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/wd01/walnut-1.svg",
+          "assets/images/products/wd01/walnut-2.svg",
+          "assets/images/products/wd01/walnut-3.svg",
+          "assets/images/products/wd01/walnut-4.svg"
+        ],
+        "white": [
+          "assets/images/products/wd01/white-1.svg",
+          "assets/images/products/wd01/white-2.svg",
+          "assets/images/products/wd01/white-3.svg",
+          "assets/images/products/wd01/white-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/wd01/grey-1.svg",
+          "assets/images/products/wd01/grey-2.svg",
+          "assets/images/products/wd01/grey-3.svg",
+          "assets/images/products/wd01/grey-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "wd02",
+      "name": "Sagar 2-Door Wardrobe",
+      "categoryId": "wardrobes",
+      "typeId": "storage",
+      "price": 18999,
+      "mrp": 25999,
+      "badge": "",
+      "rating": 4.6,
+      "reviews": 334,
+      "colors": [
+        "oak",
+        "white"
+      ],
+      "material": "Engineered wood",
+      "description": "A neat two-door wardrobe for kids and guest rooms.",
+      "specs": {
+        "Dimensions": "90 W x 52 D x 190 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/wd02/oak-1.svg",
+          "assets/images/products/wd02/oak-2.svg",
+          "assets/images/products/wd02/oak-3.svg",
+          "assets/images/products/wd02/oak-4.svg"
+        ],
+        "white": [
+          "assets/images/products/wd02/white-1.svg",
+          "assets/images/products/wd02/white-2.svg",
+          "assets/images/products/wd02/white-3.svg",
+          "assets/images/products/wd02/white-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "wd03",
+      "name": "Pranav 4-Door Sliding Wardrobe",
+      "categoryId": "wardrobes",
+      "typeId": "storage",
+      "price": 36999,
+      "mrp": 52999,
+      "badge": "Sale",
+      "rating": 4.7,
+      "reviews": 335,
+      "colors": [
+        "walnut",
+        "grey"
+      ],
+      "material": "Engineered wood, Glass",
+      "description": "Sliding doors save floor space, with a full-length mirror panel.",
+      "specs": {
+        "Dimensions": "180 W x 60 D x 210 H cm",
+        "Material": "Engineered wood, Glass",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/wd03/walnut-1.svg",
+          "assets/images/products/wd03/walnut-2.svg",
+          "assets/images/products/wd03/walnut-3.svg",
+          "assets/images/products/wd03/walnut-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/wd03/grey-1.svg",
+          "assets/images/products/wd03/grey-2.svg",
+          "assets/images/products/wd03/grey-3.svg",
+          "assets/images/products/wd03/grey-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "wd04",
+      "name": "Rhea Mirror Wardrobe",
+      "categoryId": "wardrobes",
+      "typeId": "storage",
+      "price": 31999,
+      "mrp": 44999,
+      "badge": "New",
+      "rating": 4,
+      "reviews": 336,
+      "colors": [
+        "white",
+        "oak"
+      ],
+      "material": "Engineered wood",
+      "description": "A wardrobe with a mirrored door and a deep drawer for linen.",
+      "specs": {
+        "Dimensions": "120 W x 52 D x 200 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "white": [
+          "assets/images/products/wd04/white-1.svg",
+          "assets/images/products/wd04/white-2.svg",
+          "assets/images/products/wd04/white-3.svg",
+          "assets/images/products/wd04/white-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/wd04/oak-1.svg",
+          "assets/images/products/wd04/oak-2.svg",
+          "assets/images/products/wd04/oak-3.svg",
+          "assets/images/products/wd04/oak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "cf01",
+      "name": "Zoya Coffee Table",
+      "categoryId": "coffee",
+      "typeId": "coffee",
+      "price": 7999,
+      "mrp": 10999,
+      "badge": "Bestseller",
+      "rating": 4.3,
+      "reviews": 295,
+      "colors": [
+        "walnut",
+        "oak",
+        "black"
+      ],
+      "material": "Sheesham wood",
+      "description": "A low coffee table with a lower shelf for magazines and remotes.",
+      "specs": {
+        "Dimensions": "100 L x 55 W x 42 H cm",
+        "Material": "Sheesham wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/cf01/walnut-1.svg",
+          "assets/images/products/cf01/walnut-2.svg",
+          "assets/images/products/cf01/walnut-3.svg",
+          "assets/images/products/cf01/walnut-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/cf01/oak-1.svg",
+          "assets/images/products/cf01/oak-2.svg",
+          "assets/images/products/cf01/oak-3.svg",
+          "assets/images/products/cf01/oak-4.svg"
+        ],
+        "black": [
+          "assets/images/products/cf01/black-1.svg",
+          "assets/images/products/cf01/black-2.svg",
+          "assets/images/products/cf01/black-3.svg",
+          "assets/images/products/cf01/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "cf02",
+      "name": "Kaya Solid Wood Coffee Table",
+      "categoryId": "coffee",
+      "typeId": "coffee",
+      "price": 15999,
+      "mrp": 20999,
+      "badge": "",
+      "rating": 4.4,
+      "reviews": 296,
+      "colors": [
+        "walnut",
+        "teak"
+      ],
+      "material": "Sheesham wood",
+      "description": "Slatted solid wood top with chunky tapered legs.",
+      "specs": {
+        "Dimensions": "110 L x 60 W x 40 H cm",
+        "Material": "Sheesham wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/cf02/walnut-1.svg",
+          "assets/images/products/cf02/walnut-2.svg",
+          "assets/images/products/cf02/walnut-3.svg",
+          "assets/images/products/cf02/walnut-4.svg"
+        ],
+        "teak": [
+          "assets/images/products/cf02/teak-1.svg",
+          "assets/images/products/cf02/teak-2.svg",
+          "assets/images/products/cf02/teak-3.svg",
+          "assets/images/products/cf02/teak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "cf03",
+      "name": "Tetra Nesting Coffee Tables",
+      "categoryId": "coffee",
+      "typeId": "coffee",
+      "price": 12999,
+      "mrp": 17999,
+      "badge": "Sale",
+      "rating": 4.5,
+      "reviews": 297,
+      "colors": [
+        "oak",
+        "black"
+      ],
+      "material": "Mango wood, Metal",
+      "description": "Two nesting tables that you can pull apart when guests arrive.",
+      "specs": {
+        "Dimensions": "90 L x 50 W x 42 H cm",
+        "Material": "Mango wood, Metal",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/cf03/oak-1.svg",
+          "assets/images/products/cf03/oak-2.svg",
+          "assets/images/products/cf03/oak-3.svg",
+          "assets/images/products/cf03/oak-4.svg"
+        ],
+        "black": [
+          "assets/images/products/cf03/black-1.svg",
+          "assets/images/products/cf03/black-2.svg",
+          "assets/images/products/cf03/black-3.svg",
+          "assets/images/products/cf03/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "cf04",
+      "name": "Sona Gold Metal Coffee Table",
+      "categoryId": "coffee",
+      "typeId": "coffee",
+      "price": 6999,
+      "mrp": 11999,
+      "badge": "",
+      "rating": 4.6,
+      "reviews": 298,
+      "colors": [
+        "gold",
+        "black"
+      ],
+      "material": "Metal, Glass",
+      "description": "A slim metal frame with a tempered glass top.",
+      "specs": {
+        "Dimensions": "90 L x 50 W x 40 H cm",
+        "Material": "Metal, Glass",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "gold": [
+          "assets/images/products/cf04/gold-1.svg",
+          "assets/images/products/cf04/gold-2.svg",
+          "assets/images/products/cf04/gold-3.svg",
+          "assets/images/products/cf04/gold-4.svg"
+        ],
+        "black": [
+          "assets/images/products/cf04/black-1.svg",
+          "assets/images/products/cf04/black-2.svg",
+          "assets/images/products/cf04/black-3.svg",
+          "assets/images/products/cf04/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "cf05",
+      "name": "Veer Side Table Set",
+      "categoryId": "coffee",
+      "typeId": "coffee",
+      "price": 4999,
+      "mrp": 6999,
+      "badge": "Sale",
+      "rating": 4.7,
+      "reviews": 299,
+      "colors": [
+        "black",
+        "white",
+        "oak"
+      ],
+      "material": "Metal, Engineered wood",
+      "description": "A set of two nesting side tables you can pull apart or tuck together.",
+      "specs": {
+        "Dimensions": "45 and 35 cm diameter",
+        "Material": "Metal, Engineered wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "black": [
+          "assets/images/products/cf05/black-1.svg",
+          "assets/images/products/cf05/black-2.svg",
+          "assets/images/products/cf05/black-3.svg",
+          "assets/images/products/cf05/black-4.svg"
+        ],
+        "white": [
+          "assets/images/products/cf05/white-1.svg",
+          "assets/images/products/cf05/white-2.svg",
+          "assets/images/products/cf05/white-3.svg",
+          "assets/images/products/cf05/white-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/cf05/oak-1.svg",
+          "assets/images/products/cf05/oak-2.svg",
+          "assets/images/products/cf05/oak-3.svg",
+          "assets/images/products/cf05/oak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "sd01",
+      "name": "Aditya Study Desk",
+      "categoryId": "study",
+      "typeId": "desk",
+      "price": 11999,
+      "mrp": 15999,
+      "badge": "New",
+      "rating": 4.1,
+      "reviews": 309,
+      "colors": [
+        "oak",
+        "white",
+        "walnut"
+      ],
+      "material": "Engineered wood",
+      "description": "A spacious work desk with a cable cut-out and a side drawer.",
+      "specs": {
+        "Dimensions": "120 L x 60 W x 75 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/sd01/oak-1.svg",
+          "assets/images/products/sd01/oak-2.svg",
+          "assets/images/products/sd01/oak-3.svg",
+          "assets/images/products/sd01/oak-4.svg"
+        ],
+        "white": [
+          "assets/images/products/sd01/white-1.svg",
+          "assets/images/products/sd01/white-2.svg",
+          "assets/images/products/sd01/white-3.svg",
+          "assets/images/products/sd01/white-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/sd01/walnut-1.svg",
+          "assets/images/products/sd01/walnut-2.svg",
+          "assets/images/products/sd01/walnut-3.svg",
+          "assets/images/products/sd01/walnut-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "sd02",
+      "name": "Bond Study Table with Shelf",
+      "categoryId": "study",
+      "typeId": "desk",
+      "price": 6999,
+      "mrp": 10999,
+      "badge": "",
+      "rating": 4.2,
+      "reviews": 310,
+      "colors": [
+        "walnut",
+        "oak"
+      ],
+      "material": "Engineered wood",
+      "description": "A compact desk with a bookshelf hutch above.",
+      "specs": {
+        "Dimensions": "110 L x 55 W x 140 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/sd02/walnut-1.svg",
+          "assets/images/products/sd02/walnut-2.svg",
+          "assets/images/products/sd02/walnut-3.svg",
+          "assets/images/products/sd02/walnut-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/sd02/oak-1.svg",
+          "assets/images/products/sd02/oak-2.svg",
+          "assets/images/products/sd02/oak-3.svg",
+          "assets/images/products/sd02/oak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "sd03",
+      "name": "Strio Solid Wood Study Table",
+      "categoryId": "study",
+      "typeId": "desk",
+      "price": 29999,
+      "mrp": 49999,
+      "badge": "Bestseller",
+      "rating": 4.3,
+      "reviews": 311,
+      "colors": [
+        "walnut",
+        "teak"
+      ],
+      "material": "Sheesham wood",
+      "description": "Three drawers and a solid wood top, made to last decades.",
+      "specs": {
+        "Dimensions": "140 L x 65 W x 76 H cm",
+        "Material": "Sheesham wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/sd03/walnut-1.svg",
+          "assets/images/products/sd03/walnut-2.svg",
+          "assets/images/products/sd03/walnut-3.svg",
+          "assets/images/products/sd03/walnut-4.svg"
+        ],
+        "teak": [
+          "assets/images/products/sd03/teak-1.svg",
+          "assets/images/products/sd03/teak-2.svg",
+          "assets/images/products/sd03/teak-3.svg",
+          "assets/images/products/sd03/teak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "sd04",
+      "name": "Truman Study Table",
+      "categoryId": "study",
+      "typeId": "desk",
+      "price": 14999,
+      "mrp": 25299,
+      "badge": "Sale",
+      "rating": 4.4,
+      "reviews": 312,
+      "colors": [
+        "black",
+        "oak"
+      ],
+      "material": "Metal, Engineered wood",
+      "description": "A sturdy metal-legged desk with a scratch-resistant top.",
+      "specs": {
+        "Dimensions": "125 L x 60 W x 75 H cm",
+        "Material": "Metal, Engineered wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "black": [
+          "assets/images/products/sd04/black-1.svg",
+          "assets/images/products/sd04/black-2.svg",
+          "assets/images/products/sd04/black-3.svg",
+          "assets/images/products/sd04/black-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/sd04/oak-1.svg",
+          "assets/images/products/sd04/oak-2.svg",
+          "assets/images/products/sd04/oak-3.svg",
+          "assets/images/products/sd04/oak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "tv01",
+      "name": "Linnea TV Cabinet",
+      "categoryId": "tv",
+      "typeId": "tv",
+      "price": 20999,
+      "mrp": 32999,
+      "badge": "Bestseller",
+      "rating": 4.2,
+      "reviews": 478,
+      "colors": [
+        "walnut",
+        "oak"
+      ],
+      "material": "Sheesham wood",
+      "description": "A low cabinet with drawers and open shelves for your set-top box.",
+      "specs": {
+        "Dimensions": "150 L x 40 D x 55 H cm",
+        "Material": "Sheesham wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/tv01/walnut-1.svg",
+          "assets/images/products/tv01/walnut-2.svg",
+          "assets/images/products/tv01/walnut-3.svg",
+          "assets/images/products/tv01/walnut-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/tv01/oak-1.svg",
+          "assets/images/products/tv01/oak-2.svg",
+          "assets/images/products/tv01/oak-3.svg",
+          "assets/images/products/tv01/oak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "tv02",
+      "name": "Dorian TV Unit with Ceramic Top",
+      "categoryId": "tv",
+      "typeId": "tv",
+      "price": 43999,
+      "mrp": 74999,
+      "badge": "New",
+      "rating": 4.3,
+      "reviews": 479,
+      "colors": [
+        "grey",
+        "white"
+      ],
+      "material": "Engineered wood, Ceramic",
+      "description": "A high-gloss unit with a ceramic-finish top.",
+      "specs": {
+        "Dimensions": "180 L x 40 D x 50 H cm",
+        "Material": "Engineered wood, Ceramic",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "grey": [
+          "assets/images/products/tv02/grey-1.svg",
+          "assets/images/products/tv02/grey-2.svg",
+          "assets/images/products/tv02/grey-3.svg",
+          "assets/images/products/tv02/grey-4.svg"
+        ],
+        "white": [
+          "assets/images/products/tv02/white-1.svg",
+          "assets/images/products/tv02/white-2.svg",
+          "assets/images/products/tv02/white-3.svg",
+          "assets/images/products/tv02/white-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "tv03",
+      "name": "Tavo Free-Standing TV Unit",
+      "categoryId": "tv",
+      "typeId": "tv",
+      "price": 16999,
+      "mrp": 29999,
+      "badge": "Sale",
+      "rating": 4.4,
+      "reviews": 480,
+      "colors": [
+        "oak",
+        "walnut",
+        "black"
+      ],
+      "material": "Engineered wood",
+      "description": "A clean free-standing unit that fits TVs up to 55 inches.",
+      "specs": {
+        "Dimensions": "160 L x 35 D x 45 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/tv03/oak-1.svg",
+          "assets/images/products/tv03/oak-2.svg",
+          "assets/images/products/tv03/oak-3.svg",
+          "assets/images/products/tv03/oak-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/tv03/walnut-1.svg",
+          "assets/images/products/tv03/walnut-2.svg",
+          "assets/images/products/tv03/walnut-3.svg",
+          "assets/images/products/tv03/walnut-4.svg"
+        ],
+        "black": [
+          "assets/images/products/tv03/black-1.svg",
+          "assets/images/products/tv03/black-2.svg",
+          "assets/images/products/tv03/black-3.svg",
+          "assets/images/products/tv03/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "tv04",
+      "name": "Liam Compact TV Stand",
+      "categoryId": "tv",
+      "typeId": "tv",
+      "price": 3999,
+      "mrp": 8999,
+      "badge": "Sale",
+      "rating": 4.5,
+      "reviews": 481,
+      "colors": [
+        "black",
+        "white"
+      ],
+      "material": "Engineered wood",
+      "description": "A budget-friendly stand for bedrooms and small rooms.",
+      "specs": {
+        "Dimensions": "100 L x 30 D x 40 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "black": [
+          "assets/images/products/tv04/black-1.svg",
+          "assets/images/products/tv04/black-2.svg",
+          "assets/images/products/tv04/black-3.svg",
+          "assets/images/products/tv04/black-4.svg"
+        ],
+        "white": [
+          "assets/images/products/tv04/white-1.svg",
+          "assets/images/products/tv04/white-2.svg",
+          "assets/images/products/tv04/white-3.svg",
+          "assets/images/products/tv04/white-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "ch01",
+      "name": "Anaya Accent Chair",
+      "categoryId": "chairs",
+      "typeId": "chair",
+      "price": 9499,
+      "mrp": 12999,
+      "badge": "Bestseller",
+      "rating": 4.5,
+      "reviews": 377,
+      "colors": [
+        "terracotta",
+        "olive",
+        "navy",
+        "sand"
+      ],
+      "material": "Fabric, Rubberwood legs",
+      "description": "A rounded accent chair that brings colour and comfort to any corner.",
+      "specs": {
+        "Dimensions": "70 W x 72 D x 80 H cm",
+        "Material": "Fabric, Rubberwood legs",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "terracotta": [
+          "assets/images/products/ch01/terracotta-1.svg",
+          "assets/images/products/ch01/terracotta-2.svg",
+          "assets/images/products/ch01/terracotta-3.svg",
+          "assets/images/products/ch01/terracotta-4.svg"
+        ],
+        "olive": [
+          "assets/images/products/ch01/olive-1.svg",
+          "assets/images/products/ch01/olive-2.svg",
+          "assets/images/products/ch01/olive-3.svg",
+          "assets/images/products/ch01/olive-4.svg"
+        ],
+        "navy": [
+          "assets/images/products/ch01/navy-1.svg",
+          "assets/images/products/ch01/navy-2.svg",
+          "assets/images/products/ch01/navy-3.svg",
+          "assets/images/products/ch01/navy-4.svg"
+        ],
+        "sand": [
+          "assets/images/products/ch01/sand-1.svg",
+          "assets/images/products/ch01/sand-2.svg",
+          "assets/images/products/ch01/sand-3.svg",
+          "assets/images/products/ch01/sand-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "ch04",
+      "name": "Florence Lounge Chair",
+      "categoryId": "chairs",
+      "typeId": "chair",
+      "price": 9999,
+      "mrp": 14999,
+      "badge": "",
+      "rating": 4,
+      "reviews": 380,
+      "colors": [
+        "sand",
+        "rust"
+      ],
+      "material": "Fabric, Wood",
+      "description": "A patterned lounge chair with curved wooden arms.",
+      "specs": {
+        "Dimensions": "68 W x 70 D x 82 H cm",
+        "Material": "Fabric, Wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "sand": [
+          "assets/images/products/ch04/sand-1.svg",
+          "assets/images/products/ch04/sand-2.svg",
+          "assets/images/products/ch04/sand-3.svg",
+          "assets/images/products/ch04/sand-4.svg"
+        ],
+        "rust": [
+          "assets/images/products/ch04/rust-1.svg",
+          "assets/images/products/ch04/rust-2.svg",
+          "assets/images/products/ch04/rust-3.svg",
+          "assets/images/products/ch04/rust-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "ch05",
+      "name": "Genoa Wing Chair",
+      "categoryId": "chairs",
+      "typeId": "chair",
+      "price": 19999,
+      "mrp": 32999,
+      "badge": "New",
+      "rating": 4.1,
+      "reviews": 381,
+      "colors": [
+        "grey",
+        "navy",
+        "wine"
+      ],
+      "material": "Fabric, Metal legs",
+      "description": "A tall wing-back chair with deep, supportive padding.",
+      "specs": {
+        "Dimensions": "75 W x 78 D x 105 H cm",
+        "Material": "Fabric, Metal legs",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "grey": [
+          "assets/images/products/ch05/grey-1.svg",
+          "assets/images/products/ch05/grey-2.svg",
+          "assets/images/products/ch05/grey-3.svg",
+          "assets/images/products/ch05/grey-4.svg"
+        ],
+        "navy": [
+          "assets/images/products/ch05/navy-1.svg",
+          "assets/images/products/ch05/navy-2.svg",
+          "assets/images/products/ch05/navy-3.svg",
+          "assets/images/products/ch05/navy-4.svg"
+        ],
+        "wine": [
+          "assets/images/products/ch05/wine-1.svg",
+          "assets/images/products/ch05/wine-2.svg",
+          "assets/images/products/ch05/wine-3.svg",
+          "assets/images/products/ch05/wine-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "ch03",
+      "name": "Sana Dining Chairs (Set of 2)",
+      "categoryId": "chairs",
+      "typeId": "chair",
+      "price": 6999,
+      "mrp": 9499,
+      "badge": "",
+      "rating": 4.7,
+      "reviews": 379,
+      "colors": [
+        "oak",
+        "walnut",
+        "black"
+      ],
+      "material": "Rubberwood",
+      "description": "Two sturdy chairs with a curved backrest for long meals.",
+      "specs": {
+        "Dimensions": "Seat height 46 cm",
+        "Material": "Rubberwood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/ch03/oak-1.svg",
+          "assets/images/products/ch03/oak-2.svg",
+          "assets/images/products/ch03/oak-3.svg",
+          "assets/images/products/ch03/oak-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/ch03/walnut-1.svg",
+          "assets/images/products/ch03/walnut-2.svg",
+          "assets/images/products/ch03/walnut-3.svg",
+          "assets/images/products/ch03/walnut-4.svg"
+        ],
+        "black": [
+          "assets/images/products/ch03/black-1.svg",
+          "assets/images/products/ch03/black-2.svg",
+          "assets/images/products/ch03/black-3.svg",
+          "assets/images/products/ch03/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "st01",
+      "name": "Isha Bookshelf",
+      "categoryId": "storage",
+      "typeId": "shelf",
+      "price": 9999,
+      "mrp": 13999,
+      "badge": "Bestseller",
+      "rating": 4.1,
+      "reviews": 45,
+      "colors": [
+        "walnut",
+        "oak",
+        "white"
+      ],
+      "material": "Sheesham wood",
+      "description": "An open five-tier bookshelf that doubles as a display unit.",
+      "specs": {
+        "Dimensions": "80 W x 30 D x 180 H cm",
+        "Material": "Sheesham wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/st01/walnut-1.svg",
+          "assets/images/products/st01/walnut-2.svg",
+          "assets/images/products/st01/walnut-3.svg",
+          "assets/images/products/st01/walnut-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/st01/oak-1.svg",
+          "assets/images/products/st01/oak-2.svg",
+          "assets/images/products/st01/oak-3.svg",
+          "assets/images/products/st01/oak-4.svg"
+        ],
+        "white": [
+          "assets/images/products/st01/white-1.svg",
+          "assets/images/products/st01/white-2.svg",
+          "assets/images/products/st01/white-3.svg",
+          "assets/images/products/st01/white-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "st02",
+      "name": "Arjun Shoe Cabinet",
+      "categoryId": "storage",
+      "typeId": "shelf",
+      "price": 8499,
+      "mrp": 11999,
+      "badge": "",
+      "rating": 4.2,
+      "reviews": 46,
+      "colors": [
+        "oak",
+        "white",
+        "black"
+      ],
+      "material": "Engineered wood",
+      "description": "Tilt-out shelves hold up to 18 pairs of shoes.",
+      "specs": {
+        "Dimensions": "80 W x 25 D x 110 H cm",
+        "Material": "Engineered wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/st02/oak-1.svg",
+          "assets/images/products/st02/oak-2.svg",
+          "assets/images/products/st02/oak-3.svg",
+          "assets/images/products/st02/oak-4.svg"
+        ],
+        "white": [
+          "assets/images/products/st02/white-1.svg",
+          "assets/images/products/st02/white-2.svg",
+          "assets/images/products/st02/white-3.svg",
+          "assets/images/products/st02/white-4.svg"
+        ],
+        "black": [
+          "assets/images/products/st02/black-1.svg",
+          "assets/images/products/st02/black-2.svg",
+          "assets/images/products/st02/black-3.svg",
+          "assets/images/products/st02/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "st03",
+      "name": "Neel Chest of Drawers",
+      "categoryId": "storage",
+      "typeId": "storage",
+      "price": 13499,
+      "mrp": 18499,
+      "badge": "Sale",
+      "rating": 4.3,
+      "reviews": 47,
+      "colors": [
+        "oak",
+        "walnut",
+        "grey"
+      ],
+      "material": "Mango wood",
+      "description": "Four deep drawers on smooth runners, with brass-finish handles.",
+      "specs": {
+        "Dimensions": "90 W x 45 D x 100 H cm",
+        "Material": "Mango wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "oak": [
+          "assets/images/products/st03/oak-1.svg",
+          "assets/images/products/st03/oak-2.svg",
+          "assets/images/products/st03/oak-3.svg",
+          "assets/images/products/st03/oak-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/st03/walnut-1.svg",
+          "assets/images/products/st03/walnut-2.svg",
+          "assets/images/products/st03/walnut-3.svg",
+          "assets/images/products/st03/walnut-4.svg"
+        ],
+        "grey": [
+          "assets/images/products/st03/grey-1.svg",
+          "assets/images/products/st03/grey-2.svg",
+          "assets/images/products/st03/grey-3.svg",
+          "assets/images/products/st03/grey-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "st04",
+      "name": "Kunal 5-Tier Shoe Rack",
+      "categoryId": "storage",
+      "typeId": "shelf",
+      "price": 5999,
+      "mrp": 8999,
+      "badge": "New",
+      "rating": 4.4,
+      "reviews": 48,
+      "colors": [
+        "black",
+        "oak"
+      ],
+      "material": "Metal, Engineered wood",
+      "description": "A slim open rack that fits by the front door.",
+      "specs": {
+        "Dimensions": "70 W x 30 D x 90 H cm",
+        "Material": "Metal, Engineered wood",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "black": [
+          "assets/images/products/st04/black-1.svg",
+          "assets/images/products/st04/black-2.svg",
+          "assets/images/products/st04/black-3.svg",
+          "assets/images/products/st04/black-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/st04/oak-1.svg",
+          "assets/images/products/st04/oak-2.svg",
+          "assets/images/products/st04/oak-3.svg",
+          "assets/images/products/st04/oak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "st05",
+      "name": "Vihan Bar Cabinet",
+      "categoryId": "storage",
+      "typeId": "storage",
+      "price": 17999,
+      "mrp": 23999,
+      "badge": "",
+      "rating": 4.5,
+      "reviews": 49,
+      "colors": [
+        "walnut",
+        "black"
+      ],
+      "material": "Sheesham wood, Glass",
+      "description": "A bar cabinet with a glass-holder rack and a closed cupboard.",
+      "specs": {
+        "Dimensions": "90 L x 40 D x 150 H cm",
+        "Material": "Sheesham wood, Glass",
+        "Warranty": "3 years",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/st05/walnut-1.svg",
+          "assets/images/products/st05/walnut-2.svg",
+          "assets/images/products/st05/walnut-3.svg",
+          "assets/images/products/st05/walnut-4.svg"
+        ],
+        "black": [
+          "assets/images/products/st05/black-1.svg",
+          "assets/images/products/st05/black-2.svg",
+          "assets/images/products/st05/black-3.svg",
+          "assets/images/products/st05/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "lt01",
+      "name": "Luma Table Lamp",
+      "categoryId": "lighting",
+      "typeId": "lamp",
+      "price": 2499,
+      "mrp": 3499,
+      "badge": "",
+      "rating": 4,
+      "reviews": 348,
+      "colors": [
+        "terracotta",
+        "white",
+        "black"
+      ],
+      "material": "Ceramic, Linen shade",
+      "description": "A warm ceramic-base lamp with a linen shade.",
+      "specs": {
+        "Dimensions": "Height 45 cm",
+        "Material": "Ceramic, Linen shade",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "terracotta": [
+          "assets/images/products/lt01/terracotta-1.svg",
+          "assets/images/products/lt01/terracotta-2.svg",
+          "assets/images/products/lt01/terracotta-3.svg",
+          "assets/images/products/lt01/terracotta-4.svg"
+        ],
+        "white": [
+          "assets/images/products/lt01/white-1.svg",
+          "assets/images/products/lt01/white-2.svg",
+          "assets/images/products/lt01/white-3.svg",
+          "assets/images/products/lt01/white-4.svg"
+        ],
+        "black": [
+          "assets/images/products/lt01/black-1.svg",
+          "assets/images/products/lt01/black-2.svg",
+          "assets/images/products/lt01/black-3.svg",
+          "assets/images/products/lt01/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "lt02",
+      "name": "Orbit Floor Lamp",
+      "categoryId": "lighting",
+      "typeId": "lamp",
+      "price": 4999,
+      "mrp": 7999,
+      "badge": "Bestseller",
+      "rating": 4.1,
+      "reviews": 349,
+      "colors": [
+        "gold",
+        "black"
+      ],
+      "material": "Metal, Fabric shade",
+      "description": "A slim floor lamp with a soft, round shade.",
+      "specs": {
+        "Dimensions": "Height 150 cm",
+        "Material": "Metal, Fabric shade",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "gold": [
+          "assets/images/products/lt02/gold-1.svg",
+          "assets/images/products/lt02/gold-2.svg",
+          "assets/images/products/lt02/gold-3.svg",
+          "assets/images/products/lt02/gold-4.svg"
+        ],
+        "black": [
+          "assets/images/products/lt02/black-1.svg",
+          "assets/images/products/lt02/black-2.svg",
+          "assets/images/products/lt02/black-3.svg",
+          "assets/images/products/lt02/black-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "lt03",
+      "name": "Arc Floor Lamp",
+      "categoryId": "lighting",
+      "typeId": "lamp",
+      "price": 6999,
+      "mrp": 10999,
+      "badge": "New",
+      "rating": 4.2,
+      "reviews": 350,
+      "colors": [
+        "black",
+        "gold"
+      ],
+      "material": "Metal, Marble base",
+      "description": "An arching lamp that reaches over your sofa.",
+      "specs": {
+        "Dimensions": "Height 190 cm",
+        "Material": "Metal, Marble base",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "black": [
+          "assets/images/products/lt03/black-1.svg",
+          "assets/images/products/lt03/black-2.svg",
+          "assets/images/products/lt03/black-3.svg",
+          "assets/images/products/lt03/black-4.svg"
+        ],
+        "gold": [
+          "assets/images/products/lt03/gold-1.svg",
+          "assets/images/products/lt03/gold-2.svg",
+          "assets/images/products/lt03/gold-3.svg",
+          "assets/images/products/lt03/gold-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "mr01",
+      "name": "Jaal Wall Mirror",
+      "categoryId": "mirrors",
+      "typeId": "mirror",
+      "price": 3999,
+      "mrp": 5499,
+      "badge": "Sale",
+      "rating": 4.5,
+      "reviews": 157,
+      "colors": [
+        "walnut",
+        "black",
+        "oak"
+      ],
+      "material": "Wood frame, Glass",
+      "description": "A round mirror with a slim wooden frame, ready to hang.",
+      "specs": {
+        "Dimensions": "Diameter 70 cm",
+        "Material": "Wood frame, Glass",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "walnut": [
+          "assets/images/products/mr01/walnut-1.svg",
+          "assets/images/products/mr01/walnut-2.svg",
+          "assets/images/products/mr01/walnut-3.svg",
+          "assets/images/products/mr01/walnut-4.svg"
+        ],
+        "black": [
+          "assets/images/products/mr01/black-1.svg",
+          "assets/images/products/mr01/black-2.svg",
+          "assets/images/products/mr01/black-3.svg",
+          "assets/images/products/mr01/black-4.svg"
+        ],
+        "oak": [
+          "assets/images/products/mr01/oak-1.svg",
+          "assets/images/products/mr01/oak-2.svg",
+          "assets/images/products/mr01/oak-3.svg",
+          "assets/images/products/mr01/oak-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "mr02",
+      "name": "Arch Full-Length Mirror",
+      "categoryId": "mirrors",
+      "typeId": "mirror",
+      "price": 5999,
+      "mrp": 8999,
+      "badge": "Bestseller",
+      "rating": 4.6,
+      "reviews": 158,
+      "colors": [
+        "gold",
+        "black",
+        "walnut"
+      ],
+      "material": "Metal frame, Glass",
+      "description": "A tall arched mirror you can lean against the wall.",
+      "specs": {
+        "Dimensions": "60 W x 160 H cm",
+        "Material": "Metal frame, Glass",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "gold": [
+          "assets/images/products/mr02/gold-1.svg",
+          "assets/images/products/mr02/gold-2.svg",
+          "assets/images/products/mr02/gold-3.svg",
+          "assets/images/products/mr02/gold-4.svg"
+        ],
+        "black": [
+          "assets/images/products/mr02/black-1.svg",
+          "assets/images/products/mr02/black-2.svg",
+          "assets/images/products/mr02/black-3.svg",
+          "assets/images/products/mr02/black-4.svg"
+        ],
+        "walnut": [
+          "assets/images/products/mr02/walnut-1.svg",
+          "assets/images/products/mr02/walnut-2.svg",
+          "assets/images/products/mr02/walnut-3.svg",
+          "assets/images/products/mr02/walnut-4.svg"
+        ]
+      }
+    },
+    {
+      "id": "mr03",
+      "name": "Clay Vase Trio",
+      "categoryId": "mirrors",
+      "typeId": "decor",
+      "price": 1799,
+      "mrp": 2599,
+      "badge": "",
+      "rating": 4.7,
+      "reviews": 159,
+      "colors": [
+        "terracotta",
+        "sand",
+        "olive"
+      ],
+      "material": "Terracotta",
+      "description": "Three hand-finished vases in graduated heights.",
+      "specs": {
+        "Dimensions": "Heights 15, 22 and 30 cm",
+        "Material": "Terracotta",
+        "Warranty": "1 year",
+        "Assembly": "Free, by our carpenters"
+      },
+      "images": {
+        "terracotta": [
+          "assets/images/products/mr03/terracotta-1.svg",
+          "assets/images/products/mr03/terracotta-2.svg",
+          "assets/images/products/mr03/terracotta-3.svg",
+          "assets/images/products/mr03/terracotta-4.svg"
+        ],
+        "sand": [
+          "assets/images/products/mr03/sand-1.svg",
+          "assets/images/products/mr03/sand-2.svg",
+          "assets/images/products/mr03/sand-3.svg",
+          "assets/images/products/mr03/sand-4.svg"
+        ],
+        "olive": [
+          "assets/images/products/mr03/olive-1.svg",
+          "assets/images/products/mr03/olive-2.svg",
+          "assets/images/products/mr03/olive-3.svg",
+          "assets/images/products/mr03/olive-4.svg"
+        ]
+      }
+    }
+  ]
+}

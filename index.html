@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nivaas | Furniture &amp; Home Decor</title>
+<meta name="description" content="Sofas, beds, dining sets, storage and decor for Indian homes. Prototype storefront.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+<main class="wrap">
+
+  <!-- hero -->
+  <section class="hero" aria-label="Featured collection">
+    <div class="strap">Discover the new Dusk collection</div>
+    <div class="hero-b">
+      <div class="hero-art"><img src="assets/images/banners/sofa-sand-v6.svg" alt="Cream sofa"></div>
+      <div class="hero-t">
+        <small>Biggest sale of the year</small>
+        <h1>Grand Home Fest <em>up to 60% off</em></h1>
+        <a class="btn w" href="products.html?sale=1">Shop now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMI strip -->
+  <section class="emi" aria-label="EMI offer">
+    <h3>Easy No-Cost EMI <em>on orders of ₹10,000 &amp; above*</em></h3>
+    <div class="chips"><span>Credit cards</span><span>Debit cards</span><span>UPI</span><span>Pay later</span></div>
+  </section>
+
+  <!-- shop by category -->
+  <section class="sec" aria-labelledby="h-cat">
+    <div class="sec-h"><h2 id="h-cat">Shop by Category</h2></div>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <!-- offers -->
+  <section class="sec" aria-labelledby="h-off">
+    <div class="sec-h"><h2 id="h-off">Additional Discounts and Offers</h2></div>
+    <div class="ostrip">
+      <div><i>₹</i>Up to ₹4,000 instant discount on card EMI (demo offer)</div>
+      <div><i>%</i>Extra 5% off when you pay by UPI (demo offer)</div>
+      <div><i>✓</i>Free assembly on every order above ₹10,000</div>
+      <div><i>★</i>Free delivery across Bhopal (demo offer)</div>
+    </div>
+  </section>
+
+  <!-- dusk collection bento -->
+  <section class="sec bento" aria-label="Dusk collection">
+    <a class="bgreat" href="products.html?cat=sofas"><img src="assets/images/banners/sofa-sand-v5.svg" alt=""><div class="cap"><small>The new</small><h3>Dusk</h3><span class="pillo">Explore our new collection →</span></div></a>
+    <a class="bt" href="products.html?cat=sofas"><img src="assets/images/banners/sofa-grey-v5.svg" alt=""><span>Living room →</span></a>
+    <a class="bt" href="products.html?cat=beds"><img src="assets/images/banners/bed-olive-v5.svg" alt=""><span>Bedroom →</span></a>
+    <a class="bt" href="products.html?cat=dining"><img src="assets/images/banners/dining-walnut-v5.svg" alt=""><span>Dining room →</span></a>
+    <a class="bt exp" href="products.html"><span style="margin:0">Explore all →</span></a>
+  </section>
+
+  <!-- shelves row -->
+  <section class="sec">
+    <div class="sec-h"><h2>Explore Shelves &amp; Racks</h2><a href="products.html?cat=storage">View All</a></div>
+    <div class="row" data-row="storage"></div>
+  </section>
+
+  <!-- new arrivals -->
+  <section class="sec" aria-labelledby="h-new">
+    <div class="sec-h"><h2 id="h-new">New Arrivals</h2></div>
+    <div class="hrow">
+      <a class="na" href="products.html?cat=beds"><div class="im"><img src="assets/images/banners/bed-walnut-v4.svg" alt=""></div><p><b>BEDS</b> &nbsp;|&nbsp; Retreat into gentle <b>serenity</b></p></a>
+      <a class="na" href="products.html?cat=sofas"><div class="im"><img src="assets/images/banners/sofa-olive-v4.svg" alt=""></div><p><b>SOFAS</b> &nbsp;|&nbsp; Invite moments of <b>togetherness</b></p></a>
+      <a class="na" href="products.html?cat=dining"><div class="im"><img src="assets/images/banners/dining-oak-v4.svg" alt=""></div><p><b>DINING SETS</b> &nbsp;|&nbsp; Upgrade your mealtime <b>rituals</b></p></a>
+      <a class="na" href="products.html?cat=tv"><div class="im"><img src="assets/images/banners/tv-walnut-v4.svg" alt=""></div><p><b>TV UNITS</b> &nbsp;|&nbsp; Frame your <b>movie nights</b></p></a>
+    </div>
+  </section>
+
+  <!-- deal zone -->
+  <section class="sec" aria-labelledby="h-dz">
+    <div class="sec-h"><h2 id="h-dz">Deal Zone</h2></div>
+    <div class="hrow">
+      <a class="dz" href="products.html?sale=1"><h3>Best Buys Under ₹10,000</h3><img src="assets/images/banners/coffee-oak-v0.svg" alt=""></a>
+      <a class="dz" href="products.html?sale=1"><div><h3>Clearance Sale</h3><span class="tag">140+ Options</span></div><img src="assets/images/banners/sofa-terracotta-v2.svg" alt=""></a>
+      <a class="dz" href="products.html?cat=lighting"><h3>Decor on Sale</h3><img src="assets/images/banners/lamp-gold-v1.svg" alt=""></a>
+      <a class="dz" href="products.html?cat=mirrors"><h3>Mirrors from ₹3,999</h3><img src="assets/images/banners/mirror-gold-v3.svg" alt=""></a>
+    </div>
+  </section>
+
+  <!-- bento 2 -->
+  <section class="sec bento2" aria-label="Popular picks">
+    <a class="mc big" href="products.html?cat=beds"><div class="im"><img src="assets/images/banners/bed-walnut-v4.svg" alt=""></div><h3>Hydraulic Storage Beds | <span data-count="beds"></span></h3><p>from <b data-from="beds"></b></p><span class="arrow">↗</span></a>
+    <a class="mc" href="products.html?cat=sofas"><div class="im"><img src="assets/images/banners/sofa-wine-v4.svg" alt=""></div><h3>3-Seater Sofas | <span data-count="sofas"></span></h3><p>from <b data-from="sofas"></b></p><span class="arrow">↗</span></a>
+    <a class="mc dark" href="products.html?cat=storage"><div class="im"><img src="assets/images/banners/shelf-white-v4.svg" alt=""></div><h3>Shelves &amp; Racks | <span data-count="storage"></span></h3><p>from <b data-from="storage"></b></p><span class="arrow">↗</span></a>
+    <a class="mc dark" href="products.html?cat=coffee"><div class="im"><img src="assets/images/banners/coffee-walnut-v4.svg" alt=""></div><h3>Coffee Tables | <span data-count="coffee"></span></h3><p>from <b data-from="coffee"></b></p><span class="arrow">↗</span></a>
+    <a class="mc" href="products.html?cat=dining"><div class="im"><img src="assets/images/banners/dining-oak-v4.svg" alt=""></div><h3>Dining Sets | <span data-count="dining"></span></h3><p>from <b data-from="dining"></b></p><span class="arrow">↗</span></a>
+  </section>
+
+  <!-- celebrations banner -->
+  <section class="sec">
+    <div class="fb">
+      <div class="t"><h3>Celebrations made<br>special by savings.</h3><a class="btn w sm" href="products.html?sale=1">Explore deals</a></div>
+      <div class="a"><img src="assets/images/banners/sofa-wine-v6.svg" alt=""></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Explore Lounge Chairs</h2><a href="products.html?cat=chairs">View All</a></div>
+    <div class="row" data-row="chairs"></div>
+  </section>
+
+  <section class="sec">
+    <div class="fb"><div class="t"><h3>Full Bedroom Range</h3><p>Find your favourites from 100+ options</p><a class="arrow w" href="products.html?cat=beds" aria-label="Shop beds">→</a></div>
+      <div class="a"><img src="assets/images/banners/bed-white-v6.svg" alt=""></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Explore Hydraulic Beds</h2><a href="products.html?cat=beds">View All</a></div>
+    <div class="row" data-row="beds"></div>
+  </section>
+
+  <section class="sec">
+    <div class="split"><div class="t"><h3>Enjoy up to 60% off on<br>storage &amp; wardrobes</h3><a class="arrow" href="products.html?cat=wardrobes" aria-label="Shop wardrobes">→</a></div>
+      <div class="a"><img src="assets/images/banners/storage-walnut-v4.svg" alt=""></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Top Picks in Wardrobes</h2><a href="products.html?cat=wardrobes">View All</a></div>
+    <div class="row" data-row="wardrobes"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Explore Sofas</h2><a href="products.html?cat=sofas">View All</a></div>
+    <div class="row" data-row="sofas"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Explore Coffee Tables</h2><a href="products.html?cat=coffee">View All</a></div>
+    <div class="row" data-row="coffee"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Explore TV Units</h2><a href="products.html?cat=tv">View All</a></div>
+    <div class="row" data-row="tv"></div>
+  </section>
+
+  <!-- study + tall cards -->
+  <section class="back" aria-label="Study and more">
+    <div class="fb"><div class="t"><h3>Study Tables <span class="opt">40+ Options</span></h3><p>from <u data-from="study"></u></p></div>
+      <div class="a"><img src="assets/images/banners/desk-walnut-v6.svg" alt=""></div></div>
+    <div class="tall4">
+      <a class="tc" href="products.html?cat=chairs"><div class="im"><img src="assets/images/banners/chair-oak-v4.svg" alt=""></div><span class="bdg"><span><small>UP TO</small>75%<small>OFF</small></span></span><div class="cp"><b>Lounge Chairs | <span data-count="chairs"></span></b><span>from <b data-from="chairs"></b></span><span class="arrow">↗</span></div></a>
+      <a class="tc" href="products.html?cat=storage"><div class="im"><img src="assets/images/banners/storage-teak-v4.svg" alt=""></div><span class="bdg"><span><small>UP TO</small>52%<small>OFF</small></span></span><div class="cp"><b>Storage Units | <span data-count="storage"></span></b><span>from <b data-from="storage"></b></span><span class="arrow">↗</span></div></a>
+      <a class="tc" href="products.html?cat=beds"><div class="im"><img src="assets/images/banners/bed-oak-v4.svg" alt=""></div><span class="bdg"><span><small>UP TO</small>46%<small>OFF</small></span></span><div class="cp"><b>Kids' Beds | <span data-count="beds"></span></b><span>from <b data-from="beds"></b></span><span class="arrow">↗</span></div></a>
+      <a class="tc" href="products.html?cat=lighting"><div class="im"><img src="assets/images/banners/lamp-gold-v4.svg" alt=""></div><span class="bdg"><span><small>UP TO</small>40%<small>OFF</small></span></span><div class="cp"><b>Lighting | <span data-count="lighting"></span></b><span>from <b data-from="lighting"></b></span><span class="arrow">↗</span></div></a>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Explore Study Tables</h2><a href="products.html?cat=study">View All</a></div>
+    <div class="row" data-row="study"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><h2>Explore Recliners</h2><a href="products.html?cat=recliners">View All</a></div>
+    <div class="row" data-row="recliners"></div>
+  </section>
+
+  <section class="sec">
+    <div class="fb"><div class="t"><h3>Sofa Beds</h3><p>from <b data-from="sofas"></b> | 100+ Options</p><a class="arrow w" href="products.html?cat=sofas" aria-label="Shop sofas">→</a></div>
+      <div class="a"><img src="assets/images/banners/sofa-olive-v6.svg" alt=""></div><span class="off"><span><small>UP TO</small>66%<small>OFF</small></span></span></div>
+  </section>
+
+  <!-- decor bento -->
+  <section class="sec" aria-labelledby="h-dec">
+    <div class="sec-h"><h2 id="h-dec">Decor for Every Corner</h2></div>
+    <div class="bento2">
+      <a class="mc big" href="products.html?cat=lighting"><div class="im"><img src="assets/images/banners/lamp-gold-v4.svg" alt=""></div><h3>Floor Lamps <span class="opt">60+ Options</span></h3><p>from <b data-from="lighting"></b></p><span class="arrow">↗</span></a>
+      <a class="mc" href="products.html?cat=mirrors"><div class="im"><img src="assets/images/banners/mirror-gold-v4.svg" alt=""></div><h3>Mirrors <span class="opt">30+ Options</span></h3><p>from <b data-from="mirrors"></b></p><span class="arrow">↗</span></a>
+      <a class="mc dark" href="products.html?cat=mirrors"><div class="im"><img src="assets/images/banners/decor-terracotta-v4.svg" alt=""></div><h3>Vases &amp; Decor <span class="opt">80+ Options</span></h3><p>from <b data-from="mirrors"></b></p><span class="arrow">↗</span></a>
+      <a class="mc dark" href="products.html?cat=lighting"><div class="im"><img src="assets/images/banners/lamp-black-v5.svg" alt=""></div><h3>Table Lamps <span class="opt">40+ Options</span></h3><p>from <b data-from="lighting"></b></p><span class="arrow">↗</span></a>
+      <a class="mc" href="products.html?cat=mirrors"><div class="im"><img src="assets/images/banners/mirror-walnut-v5.svg" alt=""></div><h3>Wall Mirrors <span class="opt">25+ Options</span></h3><p>from <b data-from="mirrors"></b></p><span class="arrow">↗</span></a>
+    </div>
+  </section>
+
+  <section class="sec" id="recentSec" hidden>
+    <div class="sec-h"><h2>Recently Viewed Products</h2></div>
+    <div class="row" id="recent"></div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

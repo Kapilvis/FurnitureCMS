@@ -130,6 +130,34 @@
     const material = h('input', { type: 'text', value: p.material || '' });
     const desc = h('textarea', { value: p.description || '' });
     const specs = h('textarea', { value: Object.entries(p.specs).map(([k, v]) => k + ': ' + v).join('\n') });
+    /* custom sections shown on this product's page (Myntra-style accordion): title + type + text */
+    const sections = JSON.parse(JSON.stringify(p.sections || []));
+    const secBox = h('div', { class: 'fld' });
+    const TYPE_HINT = { text: 'Paragraphs. Leave a blank line between them.', list: 'One bullet per line.', table: 'One row per line, like  Seat depth: 55 cm' };
+    const drawSections = () => {
+      secBox.replaceChildren(
+        h('label', { text: 'Product sections' }),
+        h('p', { class: 'hint', text: 'Extra collapsible sections on this product\u2019s page, for example Care, Assembly or What\u2019s inside. Max 10.' }),
+        ...sections.map((s, i) => {
+          const title = h('input', { type: 'text', value: s.title || '', placeholder: 'Section title, e.g. Care & maintenance', 'aria-label': 'Section title' });
+          title.addEventListener('input', () => { s.title = title.value; });
+          const type = h('select', { 'aria-label': 'Section type' }, [['text', 'Text'], ['list', 'Bullet list'], ['table', 'Key / value table']].map(([v, l]) => h('option', { value: v, text: l, selected: (s.type || 'text') === v })));
+          const hint = h('p', { class: 'hint', text: TYPE_HINT[s.type || 'text'] });
+          type.addEventListener('change', () => { s.type = type.value; hint.textContent = TYPE_HINT[s.type]; });
+          const body = h('textarea', { value: s.body || '', 'aria-label': 'Section text' });
+          body.addEventListener('input', () => { s.body = body.value; });
+          const move = (d) => { const j = i + d; if (j < 0 || j >= sections.length) return; [sections[i], sections[j]] = [sections[j], sections[i]]; drawSections(); };
+          return h('div', { class: 'imgs' },
+            h('div', { class: 'row2' }, title, type),
+            body, hint,
+            h('div', { class: 'foot', style: 'justify-content:flex-start' },
+              h('button', { type: 'button', class: 'btn sm', text: 'Move up', disabled: i === 0, onclick: () => move(-1) }),
+              h('button', { type: 'button', class: 'btn sm', text: 'Move down', disabled: i === sections.length - 1, onclick: () => move(1) }),
+              h('button', { type: 'button', class: 'btn sm bad', text: 'Remove', onclick: () => { sections.splice(i, 1); drawSections(); } })));
+        }),
+        h('div', {}, h('button', { type: 'button', class: 'btn sm', text: '+ Add section', disabled: sections.length >= 10, onclick: () => { sections.push({ title: '', type: 'text', body: '' }); drawSections(); } })));
+    };
+    drawSections();
     const images = JSON.parse(JSON.stringify(p.images || {}));
     const chosen = new Set(p.colors);
     const imgBox = h('div', { class: 'fld' });
@@ -154,11 +182,11 @@
       h('div', { class: 'row2' }, fld('Price (₹)', price), fld('MRP (₹, optional)', mrp, 'Original price. Leave blank for no discount.')),
       h('div', { class: 'row2' }, fld('Badge', badge), fld('Material', material)),
       fld('Description', desc), fld('Specifications', specs, 'One per line, like  Dimensions: 200 x 90 x 80 cm'),
-      fld('Colours', checks), imgBox],
+      secBox, fld('Colours', checks), imgBox],
     () => {
       const body = {
         name: name.value, categoryId: cat.value, typeId: type.value, price: price.value, mrp: mrp.value, badge: badge.value,
-        material: material.value, description: desc.value, specs: parseSpecs(), colors: [...chosen], images
+        material: material.value, description: desc.value, specs: parseSpecs(), sections, colors: [...chosen], images
       };
       return existing ? api('PUT', '/api/admin/products/' + existing.id, body) : api('POST', '/api/admin/products', Object.assign({ id: id.value }, body));
     });

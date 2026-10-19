@@ -223,11 +223,29 @@
     const root = $('#pd');
     if (!p) { root.innerHTML = '<div class="empty" style="grid-column:1/-1">Product not found. <a href="products.html" style="color:var(--accent);font-weight:600">Browse all products</a></div>'; return; }
     document.title = p.name + ' | Nivaas';
-    store.set('nivaas_recent', [p.id].concat(store.get('nivaas_recent', []).filter(x => x !== p.id)).slice(0, 6));
+    const earlier = store.get('nivaas_recent', []).filter(x => x !== p.id);
+    store.set('nivaas_recent', [p.id].concat(earlier).slice(0, 6));
     const cat = getCategory(p.category), off = discountPct(p);
     $('#crumbCat').textContent = cat.name; $('#crumbCat').href = 'products.html?cat=' + cat.id; $('#crumbCur').textContent = p.name;
     let color = 0, imgIdx = 0, qty = 1;
-    const specs = Object.entries(p.specs).map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join('');
+    const renderers = {
+      text: t => t.split(/\n{2,}/).map(x => `<p>${esc(x).replace(/\n/g, '<br>')}</p>`).join(''),
+      list: t => '<ul>' + t.split('\n').map(l => l.trim()).filter(Boolean).map(l => `<li>${esc(l)}</li>`).join('') + '</ul>',
+      table: t => '<table class="spec-t">' + t.split('\n').map(l => l.trim()).filter(Boolean).map(l => {
+        const i = l.indexOf(':');
+        return i > 0 ? `<tr><th>${esc(l.slice(0, i).trim())}</th><td>${esc(l.slice(i + 1).trim())}</td></tr>` : `<tr><td colspan="2">${esc(l)}</td></tr>`;
+      }).join('') + '</table>'
+    };
+    const specLines = [['Material', p.material]].concat(Object.entries(p.specs)).map(([k, v]) => k + ': ' + v).join('\n');
+    const sections = [
+      { title: 'Best offers', type: 'list', open: true, body: 'Extra 5% off when you pay by UPI (demo offer)\nNo-cost EMI on orders of \u20B910,000 and above (demo offer)\nFree assembly by our carpenters' },
+      { title: 'Product details', type: 'text', open: true, body: p.desc },
+      { title: 'Specifications', type: 'table', body: specLines }
+    ].concat(p.sections, [
+      { title: 'Delivery & returns', type: 'list', body: 'Delivery in 4\u201311 days depending on your PIN code (sample estimate)\nFree delivery on orders above \u20B910,000\n7-day return window (sample policy)' },
+      { title: 'Ratings', type: 'text', body: p.rating.toFixed(1) + ' out of 5, based on ' + p.reviews + ' ratings' }
+    ]);
+    const accordion = sections.map(s => `<details class="sec-d"${s.open ? ' open' : ''}><summary>${esc(s.title)}</summary><div class="sec-b">${(renderers[s.type] || renderers.text)(s.body || '')}</div></details>`).join('');
     root.innerHTML = `
       <div><div class="gal-main"><img id="gMain" alt="${esc(p.name)}"></div><div class="thumbs" id="thumbs"></div></div>
       <div>
@@ -236,15 +254,14 @@
         <div class="rate"><b>${p.rating.toFixed(1)} ★</b>${p.reviews} reviews</div>
         <div class="pr" style="margin-top:14px"><b>${inr(p.price)}</b>${off ? `<s>${inr(p.mrp)}</s><span class="off">${off}% off</span>` : ''}</div>
         <p class="tax">Inclusive of all taxes. Sample pricing.</p>
-        <p>${esc(p.desc)}</p>
-        <div class="opt-b"><div class="lab">Finish: <span id="cName"></span></div><div class="sw" id="sw"></div></div>
+        <div class="opt-b"><div class="lab">Select finish: <span id="cName"></span></div><div class="sw" id="sw"></div></div>
         <div class="opt-b"><div class="lab">Quantity</div>
           <div class="qty"><button type="button" id="qm" aria-label="Decrease quantity">−</button><input id="qv" value="1" inputmode="numeric" aria-label="Quantity"><button type="button" id="qp" aria-label="Increase quantity">+</button></div></div>
         <div class="buy"><button class="btn pri" id="addBtn" type="button">Add to cart</button><button class="btn" id="wishBtn" type="button" data-wish="${p.id}" aria-pressed="false">♡ Wishlist</button></div>
         <div class="opt-b"><div class="lab">Check delivery</div>
           <form class="pin" id="pinForm" novalidate><label class="sr" for="pin">PIN code</label><input id="pin" inputmode="numeric" maxlength="6" placeholder="Enter 6-digit PIN code"><button class="btn sm" type="submit">Check</button></form>
           <div class="msg" id="pinMsg" role="status"></div></div>
-        <div class="info"><h2>Specifications</h2><table class="spec-t"><tr><th>Material</th><td>${esc(p.material)}</td></tr>${specs}</table></div>
+        <div class="acc" id="acc">${accordion}</div>
       </div>`;
     const draw = () => {
       const imgs = productImages(p, color);
@@ -271,6 +288,10 @@
       m.className = 'msg ok'; m.textContent = 'Delivery to ' + v + ' in about ' + days + '–' + (days + 3) + ' days (sample estimate).';
     });
     draw();
+    const gm = $('.gal-main'), gimg = $('#gMain'); /* hover to zoom: the image scales around the pointer */
+    gm.addEventListener('mousemove', e => { const r = gm.getBoundingClientRect(); gimg.style.transformOrigin = ((e.clientX - r.left) / r.width * 100) + '% ' + ((e.clientY - r.top) / r.height * 100) + '%'; });
+    const seenList = earlier.map(getProduct).filter(Boolean);
+    if (seenList.length) { $('#recentWrap').hidden = false; $('#recentRow').innerHTML = seenList.map(cardHTML).join(''); }
     const rel = PRODUCTS.filter(x => x.category === p.category && x.id !== p.id).concat(PRODUCTS.filter(x => x.category !== p.category && x.rating >= 4.5)).slice(0, 4);
     $('#related').innerHTML = rel.map(cardHTML).join(''); updateCounts();
   }

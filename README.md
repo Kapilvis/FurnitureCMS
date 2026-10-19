@@ -39,12 +39,6 @@ Other ways to deploy: with the Netlify CLI run `npx netlify deploy --build --pro
 - Backups: the last 40 catalogue versions are kept in the `backups` Blobs store. View blobs with the Netlify CLI (`npx netlify blobs:list backups`) or export them occasionally.
 - Test locally the Netlify way with `npx netlify dev` (needs the CLI), or use the built-in simulator below.
 
-## GitHub Pages (storefront only)
-
-GitHub Pages serves static files only, so there the **storefront works but the admin and API do not**. The workflow `.github/workflows/pages.yml` builds `dist-pages/` (`node tools/build-pages.js`: pages, CSS, JS, images and `data/catalog.json`, no admin or server code) and deploys it on every push to `main`. On Pages the catalogue shown is whatever is committed in `data/catalog.json`; to change it there, edit that file and push. For the full CMS with login, use Netlify or a Node host (sections above).
-
-One-time setup if the first run reports that Pages is not enabled: repository **Settings > Pages > Build and deployment > Source: GitHub Actions**, then re-run the workflow.
-
 ## Run locally (Node server)
 
 ```bash
@@ -105,9 +99,11 @@ tools/                  build-netlify.js, hash-password.js, netlify-sim.mjs, bui
 | `colors`     | Master list of finishes        | `key -> { name, hex }` |
 | `types`      | Master list of product types   | `id`, `name` |
 | `categories` | Master list of shop categories | `id`, `name`, `defaultTypeId`, `image` |
-| `products`   | The catalogue                  | `id`, `name`, `categoryId`, `typeId`, `price`, `mrp`, `badge`, `colors[]`, `material`, `description`, `specs{}`, `images{ colourKey: [paths] }` |
+| `products`   | The catalogue                  | `id`, `name`, `categoryId`, `typeId`, `price`, `mrp`, `badge`, `colors[]`, `material`, `description`, `specs{}`, `sections[]`, `images{ colourKey: [paths] }` |
 
 Products reference masters by id; the API checks this on every save.
+
+**Product sections.** Each product can carry up to 10 extra collapsible sections shown on its page (like the Care or Assembly blocks on a fashion product page): `{ "title": "Care & maintenance", "type": "list", "body": "one bullet per line" }`. `type` is `text` (paragraphs), `list` (one bullet per line) or `table` (`Key: value` per line). The page always adds Best offers, Product details, Specifications, Delivery & returns and Ratings around them. Edit them in the admin under the product's **Product sections** field. Text is always shown as plain text, never as HTML.
 
 ## API
 

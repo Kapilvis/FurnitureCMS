@@ -21,6 +21,7 @@ async function loadCatalog() {
     category: p.categoryId,
     type: p.typeId,
     desc: p.description,
+    sections: p.sections || [],
     colors: p.colors.map(k => Object.assign({ key: k }, COLORS[k]))
   }));
 }

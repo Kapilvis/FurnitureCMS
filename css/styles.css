@@ -259,6 +259,24 @@ h1,h2,h3{font-family:var(--body);font-weight:700;margin:0;line-height:1.2}
 .spec-t th,.spec-t td{text-align:left;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px;vertical-align:top}
 .spec-t th{width:38%;color:var(--muted);font-weight:500}
 
+/* product page: accordion sections + zoom */
+.acc{margin-top:22px;border-top:1px solid var(--line)}
+.sec-d{border-bottom:1px solid var(--line)}
+.sec-d summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:15px 2px;font-weight:700;font-size:15px}
+.sec-d summary::-webkit-details-marker{display:none}
+.sec-d summary::after{content:"+";font-size:22px;font-weight:400;color:var(--muted);transition:transform .25s ease}
+.sec-d[open] summary::after{content:"\2212"}
+.sec-d summary:hover{color:var(--accent)}
+.sec-b{padding:0 2px 16px;color:#33353d;line-height:1.65}
+.sec-b p{margin:0 0 10px}
+.sec-b ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.sec-b .spec-t{margin:0}
+@keyframes secOpen{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.sec-d[open] .sec-b{animation:secOpen .3s ease}
+.gal-main{cursor:zoom-in}
+.gal-main img{transition:transform .3s ease}
+@media (hover:hover){.gal-main:hover img{transform:scale(1.7)}}
+
 /* cart */
 .cart{display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:start;padding-bottom:30px}
 .line{display:grid;grid-template-columns:120px 1fr auto;gap:18px;padding:18px 0;border-bottom:1px solid var(--line);align-items:center}
